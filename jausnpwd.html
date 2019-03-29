@@ -1,0 +1,36 @@
+<html>
+<script>
+function fun()
+{
+var a=f1.t1.value;
+var b=f1.t2.value;
+if(a=="")
+{
+alert("USN is  empty");
+f1.t1.focus();
+}
+else if(isNaN(a))
+{
+alert("should not be number");
+f1.t1.focus();
+}
+ else if(b=="")
+{
+alert("PSW is  empty");
+f1.t2.focus();
+}
+else
+{
+alert("data submit");
+f1.submit();
+}
+}
+</script>
+<form name="f1" action=second.jsp>
+<table>
+<tr><td>USN<input type="email" name=t1 size=20></tr>
+<tr><td>PSW<b><input type="password" name=t2 size=20></b></tr>
+<tr><td><input type=button value=submit onClick='fun()'></tr>
+</table>
+</form>
+</html>

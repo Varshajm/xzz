@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+function add()
+{
+var a=parseInt(document.getElementById("value1").value);
+var b=parseInt(document.getElementById("value2").value);
+answer.value=a+b;
+}
+function sub()
+{
+var a=parseInt(document.getElementById("value1").value);
+var b=parseInt(document.getElementById("value2").value);
+answer.value=a-b;
+}
+function mul()
+{
+var a=parseInt(document.getElementById("value1").value);
+var b=parseInt(document.getElementById("value2").value);
+answer.value=a*b;
+}
+function div()
+{
+var a=parseInt(document.getElementById("value1").value);
+var b=parseInt(document.getElementById("value2").value);
+answer.value=a/b;
+}
+</script>
+</head>
+<body>
+
+v1=<input type="text" id="value1"/>
+v2=<input type="text" id="value2"/>
+<br><input type="submit" name="add" value="add" onClick='add()'/></br>
+<br><input type="submit" name="add" value="sub" onClick='sub()'/></br>
+<br><input type="submit" name="add" value="mul" onClick='mul()'/></br>
+<br><input type="submit" name="add" value="div" onClick='div()'/></br>
+Answer=<input type="text" id="answer"/>
+
+</body>
+</head>
